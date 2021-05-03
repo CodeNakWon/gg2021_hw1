@@ -147,7 +147,6 @@ fun myFrustumM2(result: FloatArray, left: Float, right: Float, bottom: Float, to
 }
 
 fun srtMatrix(result: FloatArray, scaleX: Float = 1f, scaleY: Float = 1f, scaleZ: Float = 1f, rotX : Float = 0f, rotY : Float = 0f, rotZ : Float = 0f, transX : Float = 0f, transY : Float = 0f, transZ : Float = 0f ){
-    println("작동")
     val radianX : Float = (rotX * kotlin.math.PI/180).toFloat()
     val radianY : Float = (rotY * kotlin.math.PI/180).toFloat()
     val radianZ : Float = (rotZ * kotlin.math.PI/180).toFloat()
@@ -243,7 +242,6 @@ class Obj(context: Context, filename: String){
     }
 
     val COORDS_PER_VERTEX = 3
-    var wMatrix = FloatArray(16)
 
     private var positionHandle: Int = 0
     private var mColorHandle: Int = 0
